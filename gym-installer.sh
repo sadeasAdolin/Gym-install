@@ -131,12 +131,12 @@ else
     echo "Installing Miniconda python package/environment manager..."
     safe_brew_install wget
     
-    wget -c -nc https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-    chmod +x Miniconda3-latest-MacOSX-x86_64.sh
+    wget -c -nc https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+    chmod +x Miniconda3-latest-MacOSX-arm64.sh
     ./Miniconda3-latest-MacOSX-x86_64.sh
     # Dying around here for some reason, suddenly. Is it -nc flag? Or...?
     echo "Finished installing Miniconda"
-    rm Miniconda3-latest-MacOSX-x86_64.sh
+    rm Miniconda3-latest-MacOSX-arm64.sh
     source ~/.bash_profile
     tput smul
     echo "[TIP] For Conda to work, type 'source ~/.bash_profile' after the script completes."
